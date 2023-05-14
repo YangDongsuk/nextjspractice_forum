@@ -8,10 +8,12 @@ export default async function List() {
     <div className="list-bg">
       {result.map((item, i) => {
         return (
-          <div className="list-item">
-            <h4>{result[i].title}</h4>
-            <p>1월 1일</p>
-          </div>
+          <a href={"detail/" + result[i]._id}>
+            <div className="list-item" key={i}>
+              <h4>{result[i].title}</h4>
+              <p>1월 1일</p>
+            </div>
+          </a>
         );
       })}
     </div>
