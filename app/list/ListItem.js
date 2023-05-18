@@ -45,6 +45,24 @@ export default function ListItem({ result }) {
             >
               🗑️
             </button>
+            <button
+              onClick={(e) => {
+                fetch("/api/deleteByQs?_id=" + result[i]._id, {
+                  method: "get",
+                });
+              }}
+            >
+              query string
+            </button>
+            <button
+              onClick={(e) => {
+                fetch("/api/deleteByUrlParameter/" + result[i]._id, {
+                  method: "get",
+                });
+              }}
+            >
+              user pr
+            </button>
             {/* <DetailLink /> */}
 
             <p>1월 1일</p>
