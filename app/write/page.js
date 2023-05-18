@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 export default async function Write() {
   let session = await getServerSession(authOptions);
-  console.log(session);
+  // console.log(session);
   return (
     <>
       {session ? (
