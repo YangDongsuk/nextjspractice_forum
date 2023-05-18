@@ -45,7 +45,7 @@ export default function ListItem({ result }) {
             >
               🗑️
             </button>
-            <button
+            {/* <button
               onClick={(e) => {
                 fetch("/api/deleteByQs?_id=" + result[i]._id, {
                   method: "get",
@@ -62,7 +62,7 @@ export default function ListItem({ result }) {
               }}
             >
               user pr
-            </button>
+            </button> */}
             {/* <DetailLink /> */}
 
             <p>1월 1일</p>
