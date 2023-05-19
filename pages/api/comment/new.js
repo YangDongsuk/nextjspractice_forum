@@ -13,6 +13,7 @@ export default async function handler(요청, 응답) {
     try {
       let data = 요청.query;
       data.author = session.user.email;
+      data.authorName = session.user.name;
       data.parent = new ObjectId(data.parent);
       data.content = 요청.body;
       let db = (await connectDB).db("forum");
