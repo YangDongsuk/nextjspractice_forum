@@ -28,9 +28,10 @@ export default async function RootLayout({ children }) {
       >
         <div className="navbar">
           <Link href="/" className="logo">
-            Appleforum
+            DS FORUM
           </Link>
           <Link href="/list">List</Link>
+          <Link href="/write">write</Link>
           {session ? (
             <>
               <LogoutBtn />
